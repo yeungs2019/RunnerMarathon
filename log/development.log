@@ -32,6 +32,7 @@ Processing by ApplicationController#hello as HTML
 Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 301)
 
 
+<<<<<<< HEAD
 Started GET "/" for 204.116.145.130 at 2021-03-04 21:05:32 +0000
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
@@ -42,44 +43,122 @@ Completed 200 OK in 40ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 324
 
 
 Started GET "/" for 204.116.145.130 at 2021-03-04 21:05:33 +0000
+=======
+Started GET "/" for 204.116.145.130 at 2021-03-04 21:04:58 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 11ms (Views: 2.3ms | ActiveRecord: 0.0ms | Allocations: 1909)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-04 21:04:59 +0000
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
 Processing by ApplicationController#hello as HTML
   Rendering html template
   Rendered html template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 315)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-04 21:57:29 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 13ms (Views: 4.0ms | ActiveRecord: 0.0ms | Allocations: 1905)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-04 21:57:31 +0000
+>>>>>>> 7cc2957451c734ac88cb06b5a1bf32cd30752815
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 3)
+<<<<<<< HEAD
 Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.0ms | Allocations: 270)
 
 
 Started GET "/" for 204.116.145.130 at 2021-03-04 22:05:21 +0000
+=======
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 311)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-04 21:59:39 +0000
+>>>>>>> 7cc2957451c734ac88cb06b5a1bf32cd30752815
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
 Processing by ApplicationController#hello as HTML
   Rendering html template
   Rendered html template (Duration: 0.0ms | Allocations: 5)
+<<<<<<< HEAD
 Completed 200 OK in 14ms (Views: 5.0ms | ActiveRecord: 0.0ms | Allocations: 1877)
 
 
 Started GET "/" for 204.116.145.130 at 2021-03-04 22:05:23 +0000
+=======
+Completed 200 OK in 11ms (Views: 2.4ms | ActiveRecord: 0.0ms | Allocations: 1897)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-04 21:59:40 +0000
+>>>>>>> 7cc2957451c734ac88cb06b5a1bf32cd30752815
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
 Processing by ApplicationController#hello as HTML
   Rendering html template
   Rendered html template (Duration: 0.0ms | Allocations: 3)
+<<<<<<< HEAD
 Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 292)
 
 
 Started GET "/" for 204.116.145.130 at 2021-03-04 22:06:17 +0000
+=======
+Completed 200 OK in 2ms (Views: 1.6ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-04 22:04:23 +0000
+>>>>>>> 7cc2957451c734ac88cb06b5a1bf32cd30752815
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
 Processing by ApplicationController#hello as HTML
   Rendering html template
   Rendered html template (Duration: 0.0ms | Allocations: 5)
+<<<<<<< HEAD
 Completed 200 OK in 37ms (Views: 11.2ms | ActiveRecord: 0.0ms | Allocations: 1881)
 
 
 Started GET "/" for 204.116.145.130 at 2021-03-04 22:06:18 +0000
+=======
+Completed 200 OK in 12ms (Views: 2.9ms | ActiveRecord: 0.0ms | Allocations: 1903)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-04 22:04:25 +0000
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
 Processing by ApplicationController#hello as HTML
   Rendering html template
   Rendered html template (Duration: 0.0ms | Allocations: 3)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 307)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-04 22:05:59 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (6.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 5)
+Completed 200 OK in 29ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 1897)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-04 22:06:01 +0000
+>>>>>>> 7cc2957451c734ac88cb06b5a1bf32cd30752815
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by ApplicationController#hello as HTML
+  Rendering html template
+  Rendered html template (Duration: 0.0ms | Allocations: 3)
+<<<<<<< HEAD
 Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 291)
+=======
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 311)
+>>>>>>> 7cc2957451c734ac88cb06b5a1bf32cd30752815
 
 
