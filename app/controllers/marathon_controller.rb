@@ -29,4 +29,8 @@ class MarathonController < ApplicationController
   
   def teamsignup
   end
+  
+  #contact info
+  def contact
+  end
 end

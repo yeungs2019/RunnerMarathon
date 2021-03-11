@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   get  '/help',         to: 'marathon#help'
   get  '/home',         to: 'marathon#home'
   get  '/teamsignup',   to: 'marathon#teamsignup'
+  get  '/contact',      to: 'marathon#contact'
   root 'marathon#home'
   #root 'application#home'
 end
