@@ -1150,3 +1150,92 @@ Processing by ApplicationController#hello as HTML
 Completed 200 OK in 1ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 296)
 
 
+Started GET "/" for 204.116.145.130 at 2021-03-08 14:47:42 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by MarathonController#home as HTML
+  Rendering marathon/home.html.erb
+  Rendered marathon/home.html.erb (Duration: 13.7ms | Allocations: 3561)
+Completed 200 OK in 83ms (Views: 32.0ms | ActiveRecord: 0.0ms | Allocations: 8233)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-08 14:47:43 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering marathon/home.html.erb
+  Rendered marathon/home.html.erb (Duration: 0.8ms | Allocations: 572)
+Completed 200 OK in 3ms (Views: 3.0ms | ActiveRecord: 0.0ms | Allocations: 976)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-03-08 14:47:47 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering marathon/help.html.erb
+  Rendered marathon/help.html.erb (Duration: 3.0ms | Allocations: 662)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 1199)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-03-08 14:47:48 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering marathon/help.html.erb
+  Rendered marathon/help.html.erb (Duration: 2.1ms | Allocations: 545)
+Completed 200 OK in 11ms (Views: 10.7ms | ActiveRecord: 0.0ms | Allocations: 959)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-03-08 14:47:48 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering marathon/help.html.erb
+  Rendered marathon/help.html.erb (Duration: 1.0ms | Allocations: 543)
+Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.0ms | Allocations: 943)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-03-08 14:47:49 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering marathon/help.html.erb
+  Rendered marathon/help.html.erb (Duration: 0.8ms | Allocations: 543)
+Completed 200 OK in 3ms (Views: 2.8ms | ActiveRecord: 0.0ms | Allocations: 943)
+
+
+Started GET "/" for 204.116.145.130 at 2021-03-08 14:48:10 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering marathon/home.html.erb
+  Rendered marathon/home.html.erb (Duration: 0.9ms | Allocations: 572)
+Completed 200 OK in 4ms (Views: 3.7ms | ActiveRecord: 0.0ms | Allocations: 969)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-03-08 14:48:18 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering marathon/help.html.erb
+  Rendered marathon/help.html.erb (Duration: 1.7ms | Allocations: 543)
+Completed 200 OK in 4ms (Views: 3.4ms | ActiveRecord: 0.0ms | Allocations: 943)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-03-08 14:48:19 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering marathon/help.html.erb
+  Rendered marathon/help.html.erb (Duration: 1.4ms | Allocations: 543)
+Completed 200 OK in 3ms (Views: 2.7ms | ActiveRecord: 0.0ms | Allocations: 943)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-03-08 14:48:19 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering marathon/help.html.erb
+  Rendered marathon/help.html.erb (Duration: 0.8ms | Allocations: 543)
+Completed 200 OK in 3ms (Views: 2.5ms | ActiveRecord: 0.0ms | Allocations: 949)
+
+
+Started GET "/home" for 204.116.145.130 at 2021-03-08 14:48:20 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering marathon/home.html.erb
+  Rendered marathon/home.html.erb (Duration: 0.9ms | Allocations: 571)
+Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.0ms | Allocations: 975)
+
+
