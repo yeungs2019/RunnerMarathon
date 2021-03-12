@@ -2,37 +2,37 @@ require "test_helper"
 
 class MarathonControllerTest < ActionDispatch::IntegrationTest
   test "should get home" do
-    get marathon_home_url
+    get root_path
     assert_response :success
   end
 
   test "should get help" do
-    get marathon_help_url
+    get help_path
     assert_response :success
   end
 
   test "should get about" do
-    get marathon_about_url
+    get about_path
     assert_response :success
   end
 
   test "should get signup" do
-    get marathon_signup_url
+    get signup_path
     assert_response :success
   end
 
   test "should get signin" do
-    get marathon_signin_url
+    get signin_path
     assert_response :success
   end
 
   test "should get userlist" do
-    get marathon_userlist_url
+    get userlist_path
     assert_response :success
   end
 
   test "should get admin" do
-    get marathon_admin_url
+    get admin_path
     assert_response :success
   end
 end
