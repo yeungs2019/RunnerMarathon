@@ -8,6 +8,15 @@
 
       <%= f.label :name %>
       <%= f.text_field :name, class: 'form-control' %>
+      
+      <%= f.label :team_name  %>
+      <%= f.text_field :team_name, class: 'form-control' %>
+      
+      <%= f.label :age %>
+      <%= f.number_field :age, in: 1..100, step: 1, class: 'form-control' %>
+      
+      <%= f.label :phone_number %>
+      <%= f.telephone_field :phone_number, class: 'form-control' %>
 
       <%= f.label :email %>
       <%= f.email_field :email, class: 'form-control' %>
