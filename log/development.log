@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Started GET "/" for 204.116.145.130 at 2021-03-04 20:51:41 +0000
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
@@ -3505,3 +3506,6 @@ Processing by MarathonController#signup as HTML
 Completed 200 OK in 30ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 7923)
 
 
+=======
+a
+>>>>>>> 99d258ee9f11c0919b2fd2890a4c7ce9e6cb62e3
