@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
+  get 'users/new'
   get  '/about',        to: 'marathon#about'
-  get  '/signup',       to: 'marathon#signup'
+  get  '/signup',       to: 'users#new'
   get  '/signin',       to: 'marathon#signin'
   get  '/userlist',     to: 'marathon#userlist'
   get  '/admin',        to: 'marathon#admin'
@@ -10,4 +11,5 @@ Rails.application.routes.draw do
   get  '/contact',      to: 'marathon#contact'
   root 'marathon#home'
   #root 'application#home'
+  resources :users
 end
