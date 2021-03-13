@@ -1,4 +1,328 @@
 <<<<<<< HEAD
+a  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (2.1ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "michael@example.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (6.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Michael Hartl"], ["email", "michael@example.com"], ["created_at", "2021-03-13 04:58:55.094882"], ["updated_at", "2021-03-13 04:58:55.094882"], ["password_digest", "$2a$12$dGQDY3M3242wDHwhUCWqbuWX08WwtPnsWzsGwTz2JYo0gyPPZphpa"]]
+  [1m[36mTRANSACTION (6.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "users"[0m
+Started GET "/" for 73.180.108.38 at 2021-03-13 05:07:32 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 278.0ms | Allocations: 27514)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 78.4ms | Allocations: 7309)
+  Rendered layouts/_shim.html.erb (Duration: 1.3ms | Allocations: 87)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 291)
+  Rendered layouts/_footer.html.erb (Duration: 6.3ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 368.4ms | Allocations: 36424)
+Completed 200 OK in 439ms (Views: 390.7ms | ActiveRecord: 0.0ms | Allocations: 40653)
+
+
+Started GET "/" for 73.180.108.38 at 2021-03-13 05:07:34 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 1.8ms | Allocations: 598)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.9ms | Allocations: 6700)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 99)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 19.7ms | Allocations: 7753)
+Completed 200 OK in 21ms (Views: 21.0ms | ActiveRecord: 0.0ms | Allocations: 8140)
+
+
+Started GET "/users/1" for 73.180.108.38 at 2021-03-13 05:07:42 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant UsersController):
+  
+Started GET "/" for 73.180.108.38 at 2021-03-13 16:32:03 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 265.0ms | Allocations: 31520)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 190.4ms | Allocations: 18081)
+  Rendered layouts/_shim.html.erb (Duration: 0.7ms | Allocations: 92)
+  Rendered layouts/_header.html.erb (Duration: 0.9ms | Allocations: 291)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 462.8ms | Allocations: 51207)
+Completed 200 OK in 478ms (Views: 467.1ms | ActiveRecord: 0.0ms | Allocations: 53946)
+
+
+Started GET "/users/1" for 73.180.108.38 at 2021-03-13 16:32:08 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.7ms | Allocations: 108)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 36.8ms | Allocations: 7047)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 109)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 59.5ms | Allocations: 7622)
+Completed 200 OK in 139ms (Views: 69.1ms | ActiveRecord: 0.8ms | Allocations: 14137)
+
+
+Started GET "/users/1" for 73.180.108.38 at 2021-03-13 16:32:57 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 24.6ms | Allocations: 5660)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 5730)
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 1.4ms | Allocations: 7323)
+
+
+  
+ActionView::Template::Error (undefined method `gravatar_for' for #<ActionView::Base:0x007f121135b220>):
+    1: <% provide(:title, @user.name) %>
+    2: <h1>
+    3:   <%= gravatar_for @user %>
+    4:   <%= @user.name %>
+    5: </h1>
+  
+app/views/users/show.html.erb:3
+Started GET "/users/1" for 73.180.108.38 at 2021-03-13 16:33:50 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 49)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.5ms | Allocations: 7312)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 298)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 8924)
+Completed 200 OK in 44ms (Views: 28.0ms | ActiveRecord: 1.2ms | Allocations: 14930)
+
+
+Started GET "/users/1" for 73.180.108.38 at 2021-03-13 16:34:41 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.4ms | Allocations: 168)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.7ms | Allocations: 7198)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 284)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 8909)
+Completed 200 OK in 30ms (Views: 26.0ms | ActiveRecord: 0.1ms | Allocations: 10519)
+
+
+Started GET "/users/1" for 73.180.108.38 at 2021-03-13 16:35:54 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 35)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 541.8ms | Allocations: 57336)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 105)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 545.6ms | Allocations: 57832)
+Completed 200 OK in 551ms (Views: 546.8ms | ActiveRecord: 0.1ms | Allocations: 58720)
+
+
+Started GET "/" for 73.180.108.38 at 2021-03-13 16:37:33 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/home/ubuntu/environment/RunnerMarathon/app/helpers/users_helper.rb:10: syntax error, unexpected end-of-input, expecting end):
+  
+app/helpers/users_helper.rb:10: syntax error, unexpected end-of-input, expecting end
+app/helpers/users_helper.rb:10: syntax error, unexpected end-of-input, expecting end
+app/helpers/users_helper.rb:10: syntax error, unexpected end-of-input, expecting end
+app/controllers/application_controller.rb:1:in `<main>'
+app/controllers/marathon_controller.rb:1:in `<main>'
+Started GET "/" for 73.180.108.38 at 2021-03-13 16:38:19 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 2.0ms | Allocations: 702)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.8ms | Allocations: 7210)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 279)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 9455)
+Completed 200 OK in 30ms (Views: 29.5ms | Allocations: 10643)
+
+
+Started GET "/signin" for 73.180.108.38 at 2021-03-13 16:38:21 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#signin as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/signin.html.erb within layouts/application
+  Rendered marathon/signin.html.erb within layouts/application (Duration: 0.8ms | Allocations: 85)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.6ms | Allocations: 7175)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 109)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 18.9ms | Allocations: 7726)
+Completed 200 OK in 22ms (Views: 20.8ms | Allocations: 8296)
+
+
+Started GET "/signup" for 73.180.108.38 at 2021-03-13 16:38:23 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+ActionController::RoutingError (uninitialized constant UserController
+Did you mean?  UsersController):
+  
+Started GET "/signup" for 73.180.108.38 at 2021-03-13 16:39:12 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:8:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 32.1ms | Allocations: 5163)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 17.6ms | Allocations: 7151)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 52.5ms | Allocations: 12772)
+Completed 200 OK in 68ms (Views: 55.0ms | ActiveRecord: 0.9ms | Allocations: 18291)
+
+
+Started GET "/signup" for 73.180.108.38 at 2021-03-13 16:39:31 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 793)
+  Rendered layouts/_rails_default.html.erb (Duration: 258.2ms | Allocations: 32477)
+  Rendered layout layouts/application.html.erb (Duration: 265.6ms | Allocations: 33405)
+Completed 500 Internal Server Error in 269ms (ActiveRecord: 0.0ms | Allocations: 33843)
+
+
+  
+ActionView::Template::Error (Error: Mixin box-sizing is missing argument $boxmodel.
+        on line 141:12 of app/assets/stylesheets/marathon.scss
+>>   @include box_sizing;
+
+   -----------^
+):
+    2:     <%= csrf_meta_tags %>
+    3:     <%= csp_meta_tag %>
+    4: 
+    5:     <%= stylesheet_link_tag 'application', media: 'all',
+    6:                                            'data-turbolinks-track': 'reload' %>
+    7:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/stylesheets/marathon.scss:141
+app/views/layouts/_rails_default.html.erb:5
+app/views/layouts/application.html.erb:5
+Started GET "/signup" for 73.180.108.38 at 2021-03-13 16:40:03 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 793)
+  Rendered layouts/_rails_default.html.erb (Duration: 162.7ms | Allocations: 31114)
+  Rendered layout layouts/application.html.erb (Duration: 168.4ms | Allocations: 32042)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 0.0ms | Allocations: 32483)
+
+
+  
+ActionView::Template::Error (Error: Mixin box-sizing is missing argument $boxmodel.
+        on line 141:12 of app/assets/stylesheets/marathon.scss
+>>   @include box_sizing;
+
+   -----------^
+):
+    2:     <%= csrf_meta_tags %>
+    3:     <%= csp_meta_tag %>
+    4: 
+    5:     <%= stylesheet_link_tag 'application', media: 'all',
+    6:                                            'data-turbolinks-track': 'reload' %>
+    7:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/stylesheets/marathon.scss:141
+app/views/layouts/_rails_default.html.erb:5
+app/views/layouts/application.html.erb:5
+Started GET "/signup" for 73.180.108.38 at 2021-03-13 16:40:11 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 793)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 434.9ms | Allocations: 57984)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 96)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 441.6ms | Allocations: 59228)
+Completed 200 OK in 444ms (Views: 443.5ms | ActiveRecord: 0.0ms | Allocations: 59686)
+
+
+Started POST "/users" for 73.180.108.38 at 2021-03-13 16:43:29 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 4.8ms | Allocations: 2886)
+  Rendered users/new.html.erb within layouts/application (Duration: 13.5ms | Allocations: 7757)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 413.9ms | Allocations: 58210)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 89)
+  Rendered layouts/_header.html.erb (Duration: 0.4ms | Allocations: 279)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 436.1ms | Allocations: 67514)
+Completed 200 OK in 463ms (Views: 439.4ms | ActiveRecord: 2.1ms | Allocations: 76015)
+
+
+Started GET "/users" for 73.180.108.38 at 2021-03-13 16:46:00 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+AbstractController::ActionNotFound (The action 'index' could not be found for UsersController):
+  
+actionpack (6.1.3) lib/abstract_controller/base.rb:160:in `process'
+=======
+<<<<<<< HEAD
 Started GET "/" for 204.116.145.130 at 2021-03-04 20:51:41 +0000
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
@@ -358,6 +682,7 @@ actionpack (6.1.3) lib/action_controller/metal/instrumentation.rb:33:in `process
 actionpack (6.1.3) lib/action_controller/metal/params_wrapper.rb:249:in `process_action'
 activerecord (6.1.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
 actionpack (6.1.3) lib/abstract_controller/base.rb:165:in `process'
+>>>>>>> 37495563175dea1dad99136ee5f5d470497a0291
 actionview (6.1.3) lib/action_view/rendering.rb:39:in `process'
 actionpack (6.1.3) lib/action_controller/metal.rb:190:in `dispatch'
 actionpack (6.1.3) lib/action_controller/metal.rb:254:in `dispatch'
@@ -413,6 +738,228 @@ puma (5.0.4) lib/puma/thread_pool.rb:337:in `with_force_shutdown'
 puma (5.0.4) lib/puma/request.rb:75:in `handle_request'
 puma (5.0.4) lib/puma/server.rb:430:in `process_client'
 puma (5.0.4) lib/puma/thread_pool.rb:145:in `block in spawn_thread'
+<<<<<<< HEAD
+Started GET "/" for 73.180.108.38 at 2021-03-13 16:46:12 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 6.4ms | Allocations: 701)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 632.7ms | Allocations: 58388)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 99)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 643.6ms | Allocations: 59545)
+Completed 200 OK in 648ms (Views: 647.0ms | ActiveRecord: 0.0ms | Allocations: 60510)
+
+
+Started GET "/signup" for 73.180.108.38 at 2021-03-13 16:46:14 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.0ms | Allocations: 9)
+  Rendered users/new.html.erb within layouts/application (Duration: 2.6ms | Allocations: 882)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 17.3ms | Allocations: 7172)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 8512)
+Completed 200 OK in 30ms (Views: 29.0ms | ActiveRecord: 0.0ms | Allocations: 8973)
+
+
+Started POST "/users" for 73.180.108.38 at 2021-03-13 16:46:17 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"", "email"=>"", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36mTRANSACTION (10.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (1.9ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", ""], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 14.8ms | Allocations: 2459)
+  Rendered users/new.html.erb within layouts/application (Duration: 22.3ms | Allocations: 6811)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 10.2ms | Allocations: 7101)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 96)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 40.5ms | Allocations: 14363)
+Completed 200 OK in 65ms (Views: 42.4ms | ActiveRecord: 11.9ms | Allocations: 17229)
+
+
+Started POST "/users" for 73.180.108.38 at 2021-03-13 16:48:40 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"aaaa", "email"=>"test1@test.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:12:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test1@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (5.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "aaaa"], ["email", "test1@test.com"], ["created_at", "2021-03-13 16:48:41.194072"], ["updated_at", "2021-03-13 16:48:41.194072"], ["password_digest", "$2a$12$ku64Ft0HNyyZxoKkLRMS.uI/l/dEbA0fgjkfybiaCJInOYuHpZevK"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Redirected to https://cf5ebc2c18c044ffa0f3190a85b4d99c.vfs.cloud9.us-east-1.amazonaws.com/users/2
+Completed 302 Found in 381ms (ActiveRecord: 13.9ms | Allocations: 8808)
+
+
+Started GET "/users/2" for 73.180.108.38 at 2021-03-13 16:48:41 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 147)
+  Rendered layout layouts/application.html.erb (Duration: 2.5ms | Allocations: 1369)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms | Allocations: 3095)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <%= render 'layouts/rails_default' %>
+    <%= render 'layouts/shim' %>
+  </head>
+  <body>
+    <%= render 'layouts/header' %>
+    <div class="container">
+      <% flash.each do |message_type, message| %>
+        <div class="alert alert-<%= message_type %>"><%= message %></div>
+      <% end %
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+    </div>
+  </body>
+</html>
+):
+1:    <!DOCTYPE html>
+2:    <html>
+3:      <head>
+4:        <meta charset="utf-8">
+5:        <%= render 'layouts/rails_default' %>
+6:        <%= render 'layouts/shim' %>
+7:      </head>
+8:      <body>
+9:        <%= render 'layouts/header' %>
+10:        <div class="container">
+11:          <% flash.each do |message_type, message| %>
+12:            <div class="alert alert-<%= message_type %>"><%= message %></div>
+13:          <% end %
+14:          <%= yield %>
+15:          <%= render 'layouts/footer' %>
+16:        </div>
+17:      </body>
+18:    </html>
+  
+app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+app/views/layouts/application.html.erb:14: syntax error, unexpected '<'
+Started GET "/users/2" for 73.180.108.38 at 2021-03-13 16:49:04 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.5ms | Allocations: 165)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.8ms | Allocations: 7330)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 284)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 9133)
+Completed 200 OK in 31ms (Views: 27.5ms | ActiveRecord: 0.1ms | Allocations: 10760)
+
+
+Started GET "/signup" for 73.180.108.38 at 2021-03-13 16:50:00 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#new as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:8:in `new'
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered shared/_error_messages.html.erb (Duration: 0.3ms | Allocations: 186)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1564)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 10.1ms | Allocations: 7151)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 103)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 9187)
+Completed 200 OK in 39ms (Views: 26.6ms | ActiveRecord: 2.4ms | Allocations: 14449)
+
+
+Started POST "/users" for 73.180.108.38 at 2021-03-13 16:50:10 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"Rails Tutorial", "email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Create my account"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mUser Create (2.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?)[0m  [["name", "Rails Tutorial"], ["email", "example@railstutorial.org"], ["created_at", "2021-03-13 16:50:10.925407"], ["updated_at", "2021-03-13 16:50:10.925407"], ["password_digest", "$2a$12$aaeMXpi8cSRBJwMBNCmSUO8jwyUmy17416G5Q9PlyiUNdpBAT5mJy"]]
+  ↳ app/controllers/users_controller.rb:13:in `create'
+  [1m[36mTRANSACTION (6.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:13:in `create'
+Redirected to https://cf5ebc2c18c044ffa0f3190a85b4d99c.vfs.cloud9.us-east-1.amazonaws.com/users/3
+Completed 302 Found in 329ms (ActiveRecord: 8.7ms | Allocations: 4147)
+
+
+Started GET "/users/3" for 73.180.108.38 at 2021-03-13 16:50:11 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 12)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.4ms | Allocations: 7327)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 101)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 7810)
+Completed 200 OK in 25ms (Views: 21.1ms | ActiveRecord: 0.2ms | Allocations: 8817)
+
+
+Started GET "/users/3" for 73.180.108.38 at 2021-03-13 16:51:04 +0000
+Cannot render console from 73.180.108.38! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:4:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.2ms | Allocations: 39)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 10.7ms | Allocations: 7156)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 110)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 7674)
+Completed 200 OK in 39ms (Views: 22.5ms | ActiveRecord: 1.4ms | Allocations: 13332)
+
+
+=======
 Started GET "/" for 204.116.145.130 at 2021-03-08 06:48:26 +0000
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
@@ -3509,6 +4056,7 @@ Completed 200 OK in 30ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 792
 =======
 a
 >>>>>>> 99d258ee9f11c0919b2fd2890a4c7ce9e6cb62e3
+<<<<<<< HEAD
 Started GET "/" for 204.116.145.130 at 2021-03-13 02:12:09 +0000
 Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
   [1m[35m (2.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
@@ -3961,3 +4509,99 @@ Processing by MarathonController#help as HTML
 Completed 200 OK in 23ms (Views: 22.3ms | Allocations: 8160)
 
 
+=======
+>>>>>>> 37495563175dea1dad99136ee5f5d470497a0291
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to TeamNameAgePhone (20210313173747)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "users" ADD "team_name" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210313173747"]]
+  [1m[36mTRANSACTION (7.0ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (2.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Age (20210313174751)
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Age (20210313174751)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (7.0ms)[0m  [1m[35mALTER TABLE "users" ADD "age" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210313174751"]]
+  [1m[36mTRANSACTION (9.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to Phone (20210313174820)
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to Phone (20210313174820)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (9.5ms)[0m  [1m[35mALTER TABLE "users" ADD "phone_number" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210313174820"]]
+  [1m[36mTRANSACTION (8.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", "environment"]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (9.7ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20210312212035)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (2.0ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "email" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210312212035"]]
+  [1m[36mTRANSACTION (7.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddIndexToUsersEmail (20210312214214)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210312214214"]]
+  [1m[36mTRANSACTION (6.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to AddPasswordDigestToUsers (20210312214706)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "users" ADD "password_digest" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (10.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210312214706"]]
+  [1m[36mTRANSACTION (8.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to TeamNameAgePhone (20210313173747)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.2ms)[0m  [1m[35mALTER TABLE "users" ADD "team_name" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210313173747"]]
+  [1m[36mTRANSACTION (4.2ms)[0m  [1m[36mcommit transaction[0m
+Migrating to Age (20210313174751)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.4ms)[0m  [1m[35mALTER TABLE "users" ADD "age" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210313174751"]]
+  [1m[36mTRANSACTION (4.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to Phone (20210313174820)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.3ms)[0m  [1m[35mALTER TABLE "users" ADD "phone_number" integer[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210313174820"]]
+  [1m[36mTRANSACTION (16.4ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (1.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-03-13 17:51:17.190678"], ["updated_at", "2021-03-13 17:51:17.190678"]]
+  [1m[36mTRANSACTION (7.5ms)[0m  [1m[36mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+>>>>>>> 0f5f7a574508ea7a2f2a9505f4ecba6a5ae3f871
