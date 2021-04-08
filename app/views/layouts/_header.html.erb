@@ -1,11 +1,11 @@
 <div>
-  <header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container-fluid">
+  <header class="navbar navbar-fixed-top navbar-dark bg-primary">
+    <div class="container-fluid" "navbar-brand" href="#">
       <div class= "navbar-light bg-primary">
       <%= link_to "Runner app", root_path, id: "logo" %>
       </div>
-      <nav>
-        <ul class="nav navbar-nav navbar-right ">
+      <nav class = navbar-inverse>
+        <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Home",   root_path %></li>
           <li><%= link_to "Help",    help_path %></li>
           <li><%= link_to "Log in", signin_path %></li>
