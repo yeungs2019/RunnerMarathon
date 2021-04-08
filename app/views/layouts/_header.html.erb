@@ -1,9 +1,10 @@
 <div>
-  <header class="navbar navbar-fixed-top navbar-inverse">
-    <div class="container-fluid">
+  <header class="navbar navbar-fixed-top navbar-dark bg-primary">
+    <div class="container-fluid" "navbar-brand" href="#">
       <div class= "navbar-light bg-primary">
       <%= link_to "Runner app", root_path, id: "logo" %>
       </div>
+<<<<<<< HEAD
       <nav>
               <div class="navbar-header">
         <button type="button" class="navbar-toggle collapsed"
@@ -19,6 +20,10 @@
       <ul class="nav navbar-nav navbar-right collapse navbar-collapse"
           id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right ">
+=======
+      <nav class = navbar-inverse>
+        <ul class="nav navbar-nav navbar-right">
+>>>>>>> b26630ff20615156cb5d8c5292e2d821dbc93383
           <li><%= link_to "Home",   root_path %></li>
           <li><%= link_to "Help",    help_path %></li>
                   <% if logged_in? %>

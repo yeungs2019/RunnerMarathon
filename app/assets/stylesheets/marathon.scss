@@ -65,6 +65,8 @@ p {
   line-height: 1.7em;
   text-align: center;
   font-size: 20pt;
+  font-color: #000000;
+  font-weight: bold;
 }
 
 #logo {
@@ -91,7 +93,7 @@ footer {
 }
 
 footer a {
-  color: #555;
+  color: #000;
 }
 
 footer a:hover {
@@ -177,10 +179,27 @@ input {
 
 .runner-image {
   background-image: url("logo.jpg"); /* The image used */
-  background-color: #cccccc; /* Used if the image is unavailable */
-  height: 600px; /* You must set a specified height */
+  //background-color: #cccccc; /* Used if the image is unavailable */
+  height: 525px; /* You must set a specified height */
+  object-fit: fill;
   background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Resize the background image to cover the entire container */
+  //background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 125% 125%; /* Resize the background image to cover the entire container */
+  //opacity: 0.5;
+  //background: rgba(76, 175, 80, 0.1);
+}
+
+.runner-image::before {
+  //background-image: url("logo.jpg");
+  opacity: 0.5;
+}
+
+.background-img{
+   opacity: 0.8; 
+}
+
+
+.spacing {
+  line-height: 10%;
 }
 
