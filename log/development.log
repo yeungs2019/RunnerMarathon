@@ -14409,3 +14409,391 @@ Migrating to AddRememberDigestToUsers (20210408194802)
   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (4.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT ?[0m  [["LIMIT", 11]]
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddAdminToUsers (20210409010935)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.8ms)[0m  [1m[35mALTER TABLE "users" ADD "admin" boolean[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20210409010935"]]
+  [1m[36mTRANSACTION (8.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mUser Update (2.0ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "admin" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2021-04-09 01:10:23.586617"], ["admin", 1], ["id", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/" for 204.116.145.130 at 2021-04-09 01:12:47 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 729.3ms | Allocations: 42055)
+  Rendered layouts/_shim.html.erb (Duration: 5.7ms | Allocations: 92)
+  Rendered layouts/_header.html.erb (Duration: 11.8ms | Allocations: 446)
+  Rendered layouts/_footer.html.erb (Duration: 1.1ms | Allocations: 178)
+  Rendered layout layouts/application.html.erb (Duration: 767.6ms | Allocations: 44107)
+Completed 200 OK in 798ms (Views: 778.2ms | ActiveRecord: 0.0ms | Allocations: 46866)
+
+
+Started GET "/login" for 204.116.145.130 at 2021-04-09 01:12:52 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 23.9ms | Allocations: 2600)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 10.5ms | Allocations: 7332)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 42.8ms | Allocations: 10390)
+Completed 200 OK in 47ms (Views: 46.0ms | ActiveRecord: 0.0ms | Allocations: 11366)
+
+
+Started POST "/login" for 204.116.145.130 at 2021-04-09 01:12:58 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"ndsatterfield@csustudent.net", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ndsatterfield@csustudent.net"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:38:in `forget'
+  [1m[36mUser Update (1.4ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "remember_digest" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2021-04-09 01:12:58.913273"], ["remember_digest", nil], ["id", 3]]
+  ↳ app/models/user.rb:38:in `forget'
+  [1m[36mTRANSACTION (7.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:38:in `forget'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:24:in `remember'
+  [1m[36mUser Update (2.9ms)[0m  [1m[33mUPDATE "users" SET "remember_digest" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["remember_digest", "$2a$12$drnUx1j.78hLfpZkyybLjuQOv9OHAFgwjM.j5cOFpSYXhknV/zpS6"], ["updated_at", "2021-04-09 01:12:59.236994"], ["id", 3]]
+  ↳ app/models/user.rb:24:in `remember'
+  [1m[36mTRANSACTION (5.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:24:in `remember'
+Redirected to https://cf5ebc2c18c044ffa0f3190a85b4d99c.vfs.cloud9.us-east-1.amazonaws.com/users/3
+Completed 302 Found in 659ms (ActiveRecord: 17.8ms | Allocations: 14092)
+
+
+Started GET "/users/3" for 204.116.145.130 at 2021-04-09 01:12:59 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:12:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.8ms | Allocations: 7340)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 9.8ms | Allocations: 1616)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 9504)
+Completed 200 OK in 36ms (Views: 30.7ms | ActiveRecord: 0.4ms | Allocations: 11117)
+
+
+Started GET "/users" for 204.116.145.130 at 2021-04-09 01:14:23 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  
+SyntaxError (/home/ubuntu/environment/RunnerMarathon/app/controllers/users_controller.rb:74: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/users_controller.rb:74: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:74: syntax error, unexpected end-of-input, expecting end
+app/controllers/users_controller.rb:74: syntax error, unexpected end-of-input, expecting end
+Started GET "/users" for 204.116.145.130 at 2021-04-09 01:15:40 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 20.3ms | Allocations: 3828)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 24.3ms | Allocations: 7441)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 7.7ms | Allocations: 1468)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 60.1ms | Allocations: 13111)
+Completed 200 OK in 87ms (Views: 63.3ms | ActiveRecord: 1.6ms | Allocations: 21944)
+
+
+Started GET "/users/1" for 204.116.145.130 at 2021-04-09 01:15:45 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 0.1ms | Allocations: 36)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.5ms | Allocations: 7331)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 8.3ms | Allocations: 1508)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 25.0ms | Allocations: 9242)
+Completed 200 OK in 31ms (Views: 26.3ms | ActiveRecord: 1.6ms | Allocations: 10229)
+
+
+Started DELETE "/logout" for 204.116.145.130 at 2021-04-09 01:24:31 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:38:in `forget'
+  [1m[36mUser Update (4.4ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "remember_digest" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2021-04-09 01:24:32.280963"], ["remember_digest", nil], ["id", 3]]
+  ↳ app/models/user.rb:38:in `forget'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:38:in `forget'
+Redirected to https://cf5ebc2c18c044ffa0f3190a85b4d99c.vfs.cloud9.us-east-1.amazonaws.com/
+Completed 302 Found in 82ms (ActiveRecord: 17.1ms | Allocations: 4418)
+
+
+Started GET "/" for 204.116.145.130 at 2021-04-09 01:24:34 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (2.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 2.4ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 320.5ms | Allocations: 18673)
+  Rendered layouts/_shim.html.erb (Duration: 1.7ms | Allocations: 87)
+  Rendered layouts/_header.html.erb (Duration: 5.3ms | Allocations: 446)
+  Rendered layouts/_footer.html.erb (Duration: 2.9ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 343.9ms | Allocations: 20715)
+Completed 200 OK in 426ms (Views: 357.9ms | ActiveRecord: 0.0ms | Allocations: 23542)
+
+
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  [1m[36mUser Create (8.1ms)[0m  [1m[32mINSERT INTO "users" ("name", "email", "created_at", "updated_at", "password_digest", "admin") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "Example User"], ["email", "example@railstutorial.org"], ["created_at", "2021-04-09 01:24:37.318059"], ["updated_at", "2021-04-09 01:24:37.318059"], ["password_digest", "$2a$12$TtbgVGlR9FboCNXoK7Bqp./0rBaZAyTkGx5Os7Vb8.1QPt82KpH.e"], ["admin", 1]]
+  [1m[36mTRANSACTION (9.2ms)[0m  [1m[36mcommit transaction[0m
+Started GET "/login" for 204.116.145.130 at 2021-04-09 01:24:43 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 25.8ms | Allocations: 2599)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 20.7ms | Allocations: 7332)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 57.3ms | Allocations: 10389)
+Completed 200 OK in 67ms (Views: 63.2ms | ActiveRecord: 0.0ms | Allocations: 11360)
+
+
+Started POST "/login" for 204.116.145.130 at 2021-04-09 01:24:51 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "session"=>{"email"=>"example@railstutorial.org", "password"=>"[FILTERED]", "remember_me"=>"1"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "example@railstutorial.org"], ["LIMIT", 1]]
+  ↳ app/controllers/sessions_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/models/user.rb:24:in `remember'
+  [1m[36mUser Update (3.5ms)[0m  [1m[33mUPDATE "users" SET "updated_at" = ?, "remember_digest" = ? WHERE "users"."id" = ?[0m  [["updated_at", "2021-04-09 01:24:52.443205"], ["remember_digest", "$2a$12$r98D4ECbAzcfpxmXQ4R/0ug..r3PX5vG7lRei5J816mCSoYGsswxq"], ["id", 7]]
+  ↳ app/models/user.rb:24:in `remember'
+  [1m[36mTRANSACTION (6.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/models/user.rb:24:in `remember'
+Redirected to https://cf5ebc2c18c044ffa0f3190a85b4d99c.vfs.cloud9.us-east-1.amazonaws.com/users/7
+Completed 302 Found in 650ms (ActiveRecord: 10.9ms | Allocations: 11941)
+
+
+Started GET "/users/7" for 204.116.145.130 at 2021-04-09 01:24:52 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:13:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering users/show.html.erb within layouts/application
+  Rendered users/show.html.erb within layouts/application (Duration: 1.9ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.9ms | Allocations: 7341)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 9.5ms | Allocations: 1615)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 9509)
+Completed 200 OK in 37ms (Views: 31.8ms | ActiveRecord: 0.4ms | Allocations: 11184)
+
+
+Started GET "/users" for 204.116.145.130 at 2021-04-09 01:24:54 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 31.2ms | Allocations: 7477)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 13.1ms | Allocations: 7335)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 7.8ms | Allocations: 1465)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 57.4ms | Allocations: 16647)
+Completed 200 OK in 63ms (Views: 59.0ms | ActiveRecord: 0.5ms | Allocations: 17731)
+
+
+Started DELETE "/users/4" for 204.116.145.130 at 2021-04-09 01:25:15 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#destroy as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "id"=>"4"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `destroy'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:47:in `destroy'
+  [1m[36mUser Destroy (1.9ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/users_controller.rb:47:in `destroy'
+  [1m[36mTRANSACTION (5.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:47:in `destroy'
+Redirected to https://cf5ebc2c18c044ffa0f3190a85b4d99c.vfs.cloud9.us-east-1.amazonaws.com/users
+Completed 302 Found in 21ms (ActiveRecord: 7.8ms | Allocations: 3961)
+
+
+Started GET "/users" for 204.116.145.130 at 2021-04-09 01:25:15 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendering layout layouts/application.html.erb
+  Rendering users/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/index.html.erb:5
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered users/index.html.erb within layouts/application (Duration: 28.5ms | Allocations: 6233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.5ms | Allocations: 7484)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 8.3ms | Allocations: 1459)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 57.3ms | Allocations: 15554)
+Completed 200 OK in 63ms (Views: 59.6ms | ActiveRecord: 0.4ms | Allocations: 16517)
+
+
