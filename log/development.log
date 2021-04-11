@@ -15180,3 +15180,800 @@ Completed 200 OK in 63ms (Views: 59.6ms | ActiveRecord: 0.4ms | Allocations: 165
 >>>>>>> 6362d4419dc1f182a64ba72b4404f43e5912fa6b
 
 
+Started GET "/" for 107.133.24.28 at 2021-04-11 13:52:52 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (4.8ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 2.3ms | Allocations: 374)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 272.9ms | Allocations: 30808)
+  Rendered layouts/_shim.html.erb (Duration: 0.7ms | Allocations: 92)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 446)
+  Rendered layouts/_footer.html.erb (Duration: 1.7ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 283.7ms | Allocations: 33018)
+Completed 200 OK in 354ms (Views: 306.4ms | ActiveRecord: 0.0ms | Allocations: 37299)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 13:52:54 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.1ms | Allocations: 7348)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 7814)
+Completed 200 OK in 23ms (Views: 22.6ms | ActiveRecord: 0.0ms | Allocations: 8190)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 13:53:02 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.4ms | Allocations: 7333)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 17.2ms | Allocations: 7793)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms | Allocations: 8249)
+
+
+Started GET "/help" for 107.133.24.28 at 2021-04-11 13:53:03 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.7ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 10.4ms | Allocations: 7335)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 16.8ms | Allocations: 7892)
+Completed 200 OK in 19ms (Views: 18.3ms | ActiveRecord: 0.0ms | Allocations: 8466)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 13:53:06 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 1.5ms | Allocations: 87)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 9.8ms | Allocations: 7336)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 7891)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 8476)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 13:54:04 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 1.1ms | Allocations: 211)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 83.6ms | Allocations: 18682)
+  Rendered layouts/_shim.html.erb (Duration: 0.9ms | Allocations: 92)
+  Rendered layouts/_header.html.erb (Duration: 1.4ms | Allocations: 446)
+  Rendered layouts/_footer.html.erb (Duration: 1.6ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 96.7ms | Allocations: 20729)
+Completed 200 OK in 112ms (Views: 100.9ms | ActiveRecord: 0.0ms | Allocations: 23492)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 13:54:05 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.5ms | Allocations: 7336)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 18.2ms | Allocations: 7802)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms | Allocations: 8256)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 13:54:08 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 1.9ms | Allocations: 203)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 118.9ms | Allocations: 18527)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 92)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 446)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 130.6ms | Allocations: 20567)
+Completed 200 OK in 151ms (Views: 136.3ms | ActiveRecord: 0.0ms | Allocations: 23408)
+
+
+Started GET "/contact" for 107.133.24.28 at 2021-04-11 13:54:25 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/contact.html.erb within layouts/application
+  Rendered marathon/contact.html.erb within layouts/application (Duration: 1.0ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.9ms | Allocations: 7336)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 19.5ms | Allocations: 7894)
+Completed 200 OK in 23ms (Views: 20.7ms | ActiveRecord: 0.0ms | Allocations: 8473)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 13:55:48 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 93)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.9ms | Allocations: 7489)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 9324)
+Completed 200 OK in 28ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 10529)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 13:56:43 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 50.3ms | Allocations: 7489)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 9327)
+Completed 200 OK in 73ms (Views: 72.0ms | ActiveRecord: 0.0ms | Allocations: 10532)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 13:57:00 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 97)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.4ms | Allocations: 7488)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 9325)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 10517)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 13:57:06 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 103)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 27.5ms | Allocations: 7489)
+  Rendered layouts/_shim.html.erb (Duration: 1.0ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 2.5ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 48.1ms | Allocations: 9334)
+Completed 200 OK in 56ms (Views: 54.4ms | ActiveRecord: 0.0ms | Allocations: 10538)
+
+
+Started GET "/help" for 107.133.24.28 at 2021-04-11 13:57:42 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 90)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.6ms | Allocations: 7489)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 9320)
+Completed 200 OK in 30ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 10518)
+
+
+Started GET "/help" for 107.133.24.28 at 2021-04-11 13:58:46 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.7ms | Allocations: 7488)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 9320)
+Completed 200 OK in 28ms (Views: 26.6ms | ActiveRecord: 0.0ms | Allocations: 10510)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 13:59:07 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.3ms | Allocations: 7490)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 9335)
+Completed 200 OK in 29ms (Views: 27.5ms | ActiveRecord: 0.0ms | Allocations: 10537)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 13:59:57 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 23.8ms | Allocations: 7489)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 9326)
+Completed 200 OK in 43ms (Views: 41.7ms | ActiveRecord: 0.0ms | Allocations: 10519)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:00:12 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 1.2ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 27.5ms | Allocations: 7488)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 1.2ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 43.1ms | Allocations: 9324)
+Completed 200 OK in 50ms (Views: 48.7ms | Allocations: 10521)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:04:27 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 98)
+  Rendered layouts/_rails_default.html.erb (Duration: 348.6ms | Allocations: 37956)
+  Rendered layout layouts/application.html.erb (Duration: 353.3ms | Allocations: 38559)
+Completed 500 Internal Server Error in 358ms (Allocations: 39724)
+
+
+  
+ActionView::Template::Error (Error: property "content" must be followed by a ':'
+        on line 194:3 of app/assets/stylesheets/marathon.scss
+>>   content = "";
+
+   --^
+):
+    2:     <%= csrf_meta_tags %>
+    3:     <%= csp_meta_tag %>
+    4: 
+    5:     <%= stylesheet_link_tag 'application', media: 'all',
+    6:                                            'data-turbolinks-track': 'reload' %>
+    7:     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  
+app/assets/stylesheets/marathon.scss:194
+app/views/layouts/_rails_default.html.erb:5
+app/views/layouts/application.html.erb:6
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:04:45 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 551.4ms | Allocations: 72514)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 555.5ms | Allocations: 72979)
+Completed 200 OK in 558ms (Views: 557.4ms | Allocations: 73427)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 14:04:50 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 98)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.8ms | Allocations: 7400)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 425)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 20.0ms | Allocations: 8892)
+Completed 200 OK in 23ms (Views: 22.2ms | Allocations: 9552)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 14:05:06 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 512.8ms | Allocations: 61328)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 94)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 516.1ms | Allocations: 61793)
+Completed 200 OK in 518ms (Views: 517.9ms | Allocations: 62244)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:05:11 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 10.9ms | Allocations: 7251)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 7710)
+Completed 200 OK in 19ms (Views: 18.2ms | Allocations: 8162)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:05:48 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 659.7ms | Allocations: 62486)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 663.6ms | Allocations: 62945)
+Completed 200 OK in 666ms (Views: 665.3ms | Allocations: 63385)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:06:03 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 603.5ms | Allocations: 61977)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 607.5ms | Allocations: 62436)
+Completed 200 OK in 610ms (Views: 609.1ms | Allocations: 62879)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:06:23 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 538.1ms | Allocations: 62999)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 541.5ms | Allocations: 63458)
+Completed 200 OK in 544ms (Views: 543.0ms | Allocations: 63906)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:06:57 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 564.2ms | Allocations: 62416)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 570.2ms | Allocations: 62875)
+Completed 200 OK in 571ms (Views: 570.8ms | Allocations: 63328)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:08:15 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 480.6ms | Allocations: 61981)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 484.6ms | Allocations: 62440)
+Completed 200 OK in 486ms (Views: 485.4ms | Allocations: 62884)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 14:08:18 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.9ms | Allocations: 7251)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 19.0ms | Allocations: 7710)
+Completed 200 OK in 22ms (Views: 21.2ms | Allocations: 8156)
+
+
+Started GET "/contact" for 107.133.24.28 at 2021-04-11 14:08:19 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/contact.html.erb within layouts/application
+  Rendered marathon/contact.html.erb within layouts/application (Duration: 0.9ms | Allocations: 92)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.7ms | Allocations: 7254)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 19.2ms | Allocations: 7813)
+Completed 200 OK in 22ms (Views: 20.8ms | Allocations: 8389)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 14:08:20 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 10.4ms | Allocations: 7251)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 16.4ms | Allocations: 7710)
+Completed 200 OK in 19ms (Views: 18.4ms | Allocations: 8166)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 14:08:22 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.1ms | Allocations: 7251)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 18.6ms | Allocations: 7710)
+Completed 200 OK in 21ms (Views: 19.6ms | Allocations: 8164)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:08:23 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 16.9ms | Allocations: 7252)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 7711)
+Completed 200 OK in 28ms (Views: 27.5ms | Allocations: 8153)
+
+
+Started GET "/help" for 107.133.24.28 at 2021-04-11 14:08:24 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.8ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 16.0ms | Allocations: 7254)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 7815)
+Completed 200 OK in 27ms (Views: 25.6ms | Allocations: 8389)
+
+
+Started GET "/help" for 107.133.24.28 at 2021-04-11 14:08:25 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 15.1ms | Allocations: 7251)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 7710)
+Completed 200 OK in 25ms (Views: 24.5ms | Allocations: 8161)
+
+
+Started GET "/login" for 107.133.24.28 at 2021-04-11 14:08:25 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 45.7ms | Allocations: 5405)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 93.0ms | Allocations: 7212)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 151.3ms | Allocations: 13074)
+Completed 200 OK in 166ms (Views: 164.9ms | Allocations: 14063)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:08:30 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 37.1ms | Allocations: 7255)
+  Rendered layouts/_shim.html.erb (Duration: 0.1ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 7726)
+Completed 200 OK in 47ms (Views: 46.0ms | Allocations: 8183)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:09:16 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 442.6ms | Allocations: 61946)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 446.6ms | Allocations: 62405)
+Completed 200 OK in 449ms (Views: 448.6ms | Allocations: 62851)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:09:40 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.1ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 611.1ms | Allocations: 61465)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 616.1ms | Allocations: 61924)
+Completed 200 OK in 622ms (Views: 620.9ms | Allocations: 62376)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:09:48 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 12.8ms | Allocations: 7802)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 19.6ms | Allocations: 8261)
+Completed 200 OK in 22ms (Views: 21.4ms | Allocations: 8705)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:10:26 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 482.9ms | Allocations: 61944)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.5ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 486.1ms | Allocations: 62403)
+Completed 200 OK in 489ms (Views: 488.2ms | Allocations: 62849)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:10:34 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 441.7ms | Allocations: 60997)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 445.6ms | Allocations: 61456)
+Completed 200 OK in 448ms (Views: 447.4ms | Allocations: 61896)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:10:45 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 472.4ms | Allocations: 61953)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 476.4ms | Allocations: 62412)
+Completed 200 OK in 479ms (Views: 478.2ms | Allocations: 62860)
+
+
+Started GET "/about" for 107.133.24.28 at 2021-04-11 14:10:50 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/about.html.erb within layouts/application
+  Rendered marathon/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 105)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.8ms | Allocations: 7255)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 18.8ms | Allocations: 7827)
+Completed 200 OK in 20ms (Views: 19.6ms | Allocations: 8404)
+
+
+Started GET "/help" for 107.133.24.28 at 2021-04-11 14:10:57 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 94)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.2ms | Allocations: 7254)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 98)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 7815)
+Completed 200 OK in 21ms (Views: 20.6ms | Allocations: 8397)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:10:59 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.1ms | Allocations: 7251)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 17.3ms | Allocations: 7710)
+Completed 200 OK in 19ms (Views: 18.9ms | Allocations: 8165)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:11:28 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 807.5ms | Allocations: 62472)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 813.6ms | Allocations: 62931)
+Completed 200 OK in 816ms (Views: 815.0ms | Allocations: 63382)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:12:16 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 761.6ms | Allocations: 61484)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 763.3ms | Allocations: 61943)
+Completed 200 OK in 768ms (Views: 767.5ms | Allocations: 62391)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:13:07 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 435.1ms | Allocations: 61983)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 438.9ms | Allocations: 62442)
+Completed 200 OK in 440ms (Views: 439.7ms | Allocations: 62887)
+
+
+Started GET "/help" for 107.133.24.28 at 2021-04-11 14:13:27 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 17.8ms | Allocations: 8350)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 8809)
+Completed 200 OK in 27ms (Views: 26.0ms | Allocations: 9263)
+
+
+Started GET "/help" for 107.133.24.28 at 2021-04-11 14:13:27 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.1ms | Allocations: 7332)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 16.3ms | Allocations: 7791)
+Completed 200 OK in 18ms (Views: 17.8ms | Allocations: 8239)
+
+
+Started GET "/" for 107.133.24.28 at 2021-04-11 14:13:28 +0000
+Cannot render console from 107.133.24.28! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 11.9ms | Allocations: 7265)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.2ms | Allocations: 88)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 17.4ms | Allocations: 7724)
+Completed 200 OK in 19ms (Views: 18.6ms | Allocations: 8182)
+
+
