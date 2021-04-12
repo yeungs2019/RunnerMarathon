@@ -1,11 +1,12 @@
 class UsersController < ApplicationController
   
-  before_action :logged_in_user, only: [:index, :edit, :update, :destroy]
+  before_action :logged_in_user, only: [:show, :index, :edit, :update, :destroy]
   before_action :correct_user,   only: [:edit, :update]
   before_action :admin_user,     only: :destroy
   
    def index
-    @team = current_user.team_name 
+    @team = current_user.team_name
+    @current_user = current_user
     @users = User.where(team_name: @team)
     @all_users = User.all
   end
@@ -55,7 +56,7 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(:name, :team_name, :age, :phone_number, :email, :password,
-                                   :password_confirmation, )
+                                   :password_confirmation, :admin )
     end
     
 def logged_in_user
@@ -68,7 +69,7 @@ def logged_in_user
 
 def correct_user
       @user = User.find(params[:id])
-      redirect_to(root_url) unless current_user?(@user)
+      redirect_to(root_url) unless current_user?(@user) || current_user.admin?
     end
   
   def admin_user

@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  before_save :check_to_make_admin
     attr_accessor :remember_token
   before_save { self.email = email.downcase }
   validates :name,  presence: true, length: { maximum: 50 }
@@ -38,3 +39,12 @@ def forget
     update_attribute(:remember_digest, nil)
   end
 end
+
+private
+
+  def check_to_make_admin
+    # Only the first user should be made admin
+    if User.count == 0
+      self.admin = true
+    end
+  end
