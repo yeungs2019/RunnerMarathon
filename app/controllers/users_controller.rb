@@ -5,7 +5,9 @@ class UsersController < ApplicationController
   before_action :admin_user,     only: :destroy
   
    def index
-    @users = User.all
+    @team = current_user.team_name 
+    @users = User.where(team_name: @team)
+    @all_users = User.all
   end
 
 
@@ -53,7 +55,7 @@ class UsersController < ApplicationController
 
     def user_params
       params.require(:user).permit(:name, :team_name, :age, :phone_number, :email, :password,
-                                   :password_confirmation)
+                                   :password_confirmation, )
     end
     
 def logged_in_user
