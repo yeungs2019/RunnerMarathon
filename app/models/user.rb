@@ -10,7 +10,8 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   validates :age,  presence: true
-  validates :phone_number,  presence: true
+  VALID_PHONE_REGEX = /\(\d{3}\)\s\d{3}-\d{4}/i
+  validates :phone_number,  presence: true, format: { with: VALID_PHONE_REGEX }
 
 def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :

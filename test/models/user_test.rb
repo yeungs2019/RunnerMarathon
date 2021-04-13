@@ -40,6 +40,15 @@ class UserTest < ActiveSupport::TestCase
       assert_not @user.valid?, "#{invalid_address.inspect} should be invalid"
     end
   end
+  
+  test "phone validation should accept valid addresses" do
+    valid_number = %w[(123) 456-7890 (124) 456-1290 (321) 456-7980]
+    valid_number.each do |valid_number|
+      @user.phone_number = valid_number
+      assert @user.valid?, "#{valid_number.inspect} should be valid"
+    end
+  end
+end
 test "email addresses should be unique" do
     duplicate_user = @user.dup
     @user.save
