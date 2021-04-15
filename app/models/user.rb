@@ -7,10 +7,12 @@ class User < ApplicationRecord
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   validates :age,  presence: true
-  VALID_PHONE_REGEX = /\(\d{3}\)\s\d{3}-\d{4}/i
-  validates :email, :format => { :with=> VALID_EMAIL_REGEX , :message => "Invalid should use format example@marathon.com"},
+  VALID_PHONE_REGEX = /\d{9,}/
+  validates :email, :format => { :with=> VALID_EMAIL_REGEX, length: { minimum: 6 }, :message => "Invalid should use format example@marathon.com"},
                   uniqueness: true
-  validates :phone_number, :format => { :with=> VALID_PHONE_REGEX, :message => "Invalid should use format (xxx) xxx-xxxx" }
+validates :phone_number, :format => { :with=> VALID_PHONE_REGEX , :message => "Invalid should use format xxxxxxxxxx"},
+          uniqueness: true
+         
 def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
