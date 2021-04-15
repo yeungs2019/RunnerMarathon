@@ -223,6 +223,20 @@ input {
   //opacity: 0.5;
 }
 
+.map-image{
+  
+  position: relative;
+  background-image: url("Map.png"); /* The image used */
+  //background-color: #cccccc; /* Used if the image is unavailable */
+  height: 600px; /* You must set a specified height */
+  object-fit: cover;
+  background-position: center; /* Center the image */
+  //background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: 125% 125%; /* Resize the background image to cover the entire container */
+  opacity: 1;
+  //text-opacity: 1;
+  //background: rgba(76, 175, 80, 0.1);
+}
 .background-img{
   // opacity: 0.5; 
   position: relative;
