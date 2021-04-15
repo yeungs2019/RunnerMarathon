@@ -18,8 +18,9 @@ group :development, :test do
   gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
 end
 
-gem 'sqlite3', group: :development
- gem 'pg', '1.2.3', group: :production
+ group :production do
+  gem 'pg', '1.2.3'
+end
 
 group :development do
   gem 'web-console',           '4.1.0'
