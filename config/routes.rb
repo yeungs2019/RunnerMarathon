@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   get 'sessions/new'
   get 'users/new'
   get  '/about',        to: 'marathon#about'
+  get  '/schedule',     to: 'users#schedule'
   get  '/signup',       to: 'users#new'
   get  '/signin',       to: 'marathon#signin'
   get  '/userlist',     to: 'marathon#userlist'
