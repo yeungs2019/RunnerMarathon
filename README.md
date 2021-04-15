@@ -4,7 +4,7 @@ This app is developed to raise awareness for Alzheimer's disease.  People are al
 
 ## License
 
-All source code in the [Ruby on Rails Tutorial](https://www.railstutorial.org/)
+All source code in the [RunnerMarathonforAlzheimer's](https://www.railstutorial.org/)
 is available jointly under the MIT License and the Beerware License. See
 [LICENSE.md](LICENSE.md) for details.
 
