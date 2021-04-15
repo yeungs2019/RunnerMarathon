@@ -4,15 +4,13 @@ class User < ApplicationRecord
   before_save { self.email = email.downcase }
   validates :name,  presence: true, length: { maximum: 50 }
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-]+(\.[a-z\d\-]+)*\.[a-z]+\z/i
-  validates :email, presence: true, length: { maximum: 255 },
-                    format: { with: VALID_EMAIL_REGEX },
-                    uniqueness: true
   has_secure_password
   validates :password, presence: true, length: { minimum: 6 }, allow_nil: true
   validates :age,  presence: true
   VALID_PHONE_REGEX = /\(\d{3}\)\s\d{3}-\d{4}/i
-  validates :phone_number,  presence: true, format: { with: VALID_PHONE_REGEX }
-
+  validates :email, :format => { :with=> VALID_EMAIL_REGEX , :message => "Invalid should use format example@marathon.com"},
+                  uniqueness: true
+  validates :phone_number, :format => { :with=> VALID_PHONE_REGEX, :message => "Invalid should use format (xxx) xxx-xxxx" }
 def User.digest(string)
     cost = ActiveModel::SecurePassword.min_cost ? BCrypt::Engine::MIN_COST :
                                                   BCrypt::Engine.cost
