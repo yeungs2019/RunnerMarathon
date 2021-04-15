@@ -26488,3 +26488,142 @@ Processing by MarathonController#home as HTML
 Completed 200 OK in 43ms (Views: 42.2ms | ActiveRecord: 0.2ms | Allocations: 12448)
 
 
+Started GET "/" for 204.116.145.130 at 2021-04-15 19:56:57 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 1.5ms | Allocations: 384)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 61.4ms | Allocations: 32375)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 87)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 510)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 70.2ms | Allocations: 34654)
+Completed 200 OK in 98ms (Views: 78.9ms | ActiveRecord: 0.0ms | Allocations: 38909)
+
+
+Started GET "/" for 204.116.145.130 at 2021-04-15 19:57:00 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 221)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 26.3ms | Allocations: 18666)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 87)
+  Rendered layouts/_header.html.erb (Duration: 0.8ms | Allocations: 510)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 20782)
+Completed 200 OK in 54ms (Views: 43.1ms | ActiveRecord: 0.0ms | Allocations: 23619)
+
+
+Started GET "/" for 204.116.145.130 at 2021-04-15 19:57:57 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.6ms | Allocations: 7489)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 469)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 9390)
+Completed 200 OK in 20ms (Views: 19.3ms | ActiveRecord: 0.0ms | Allocations: 10577)
+
+
+Started GET "/" for 204.116.145.130 at 2021-04-15 19:58:58 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.7ms | Allocations: 7489)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 469)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 15.8ms | Allocations: 9390)
+Completed 200 OK in 20ms (Views: 18.8ms | ActiveRecord: 0.0ms | Allocations: 10576)
+
+
+Started GET "/" for 204.116.145.130 at 2021-04-15 20:00:17 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.3ms | Allocations: 100)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.3ms | Allocations: 7488)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 469)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 15.1ms | Allocations: 9388)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 10558)
+
+
+Started GET "/login" for 204.116.145.130 at 2021-04-15 20:02:51 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 29.2ms | Allocations: 5398)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.5ms | Allocations: 7449)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.6ms | Allocations: 464)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 44.1ms | Allocations: 14643)
+Completed 200 OK in 47ms (Views: 46.3ms | ActiveRecord: 0.0ms | Allocations: 15838)
+
+
+Started GET "/login" for 204.116.145.130 at 2021-04-15 20:04:56 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.4ms | Allocations: 756)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.9ms | Allocations: 7486)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 465)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 10038)
+Completed 200 OK in 20ms (Views: 19.2ms | Allocations: 11223)
+
+
+Started GET "/login" for 204.116.145.130 at 2021-04-15 20:04:57 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 2600)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.6ms | Allocations: 7449)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 465)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 171)
+  Rendered layout layouts/application.html.erb (Duration: 31.6ms | Allocations: 11854)
+Completed 200 OK in 35ms (Views: 33.8ms | Allocations: 13046)
+
+
+Started GET "/login" for 204.116.145.130 at 2021-04-15 20:05:10 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering sessions/new.html.erb within layouts/application
+  Rendered sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 756)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 9.0ms | Allocations: 7487)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 84)
+  Rendered layouts/_header.html.erb (Duration: 0.7ms | Allocations: 465)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 16.9ms | Allocations: 10042)
+Completed 200 OK in 21ms (Views: 19.5ms | Allocations: 11232)
+
+
