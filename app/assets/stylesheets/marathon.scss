@@ -69,6 +69,14 @@ p {
   font-weight: bold;
 }
 
+.p1{
+  font-size: 17pt;
+}
+
+.p2{
+  font-size: 18.5pt;
+}
+
 #logo {
   float: left;
   margin-right: 10px;
@@ -90,6 +98,7 @@ footer {
   padding-top: 5px;
   border-top: 1px solid #000000;
   color: #777;
+  font-size: 1.1em;
 }
 
 footer a {
@@ -186,7 +195,8 @@ input {
   background-position: center; /* Center the image */
   //background-repeat: no-repeat; /* Do not repeat the image */
   background-size: 125% 125%; /* Resize the background image to cover the entire container */
-  //opacity: 0.5;
+  //opacity: 1;
+  //text-opacity: 1;
   //background: rgba(76, 175, 80, 0.1);
 }
 
@@ -198,7 +208,7 @@ input {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0.75;
+  opacity: 0;
   //opacity: 0.5;
 }
 
@@ -258,4 +268,8 @@ input {
     padding: 10px 0;
     border-bottom: 1px solid $gray-lighter;
   }
+}
+
+.box2 {
+ width: 20px;
 }

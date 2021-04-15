@@ -3,8 +3,13 @@
   <aside class="col-md-4">
     <section class="user_info">
       <h1>
-        <%= gravatar_for @user %>
-        <%= @user.name %>
+        <%= gravatar_for @user %> <br> <br> <br> <br> <br>
+         <br>Name: <%= @user.name %>
+         <br>Team Name: <%= @user.team_name %>
+         <br>Email: <%= @user.email %>
+         <br>Phone Number: <%= @user.phone_number %>
+         <br>Age: <%= @user.age %>
+         <br><%= link_to "edit", edit_user_path(@user) %>
       </h1>
     </section>
   </aside>
