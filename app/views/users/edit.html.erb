@@ -28,8 +28,13 @@
       <%= f.password_field :password_confirmation, class: 'form-control' %>
       
       <% if current_user.admin? %>
+<<<<<<< HEAD
         <%= f.label :Admin, class: "checkbox" %>
           <%= f.check_box :admin %>
+=======
+        <%= f.label :Admin, class: "cheekbox inline" %>
+          <%= f.check_box :admin, class: "box2" %>
+>>>>>>> c878e4c81a6826fc83ab66cfff528cabe1afb2fe
         <% end %>
 
       <%= f.submit "Submit", class: "btn btn-primary left" %>
