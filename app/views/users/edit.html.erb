@@ -28,11 +28,11 @@
       <%= f.password_field :password_confirmation, class: 'form-control' %>
       
       <% if current_user.admin? %>
-        <%= f.label :Admin, class: "checkbox inline" %>
+        <%= f.label :Admin, class: "checkbox" %>
           <%= f.check_box :admin %>
         <% end %>
 
-      <%= f.submit "Submit", class: "btn btn-primary" %>
+      <%= f.submit "Submit", class: "btn btn-primary left" %>
       
     <% end %>
     <div class="gravatar_edit">
