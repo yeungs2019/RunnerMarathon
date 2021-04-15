@@ -15,9 +15,11 @@ gem 'jbuilder',   '2.10.0'
 gem 'bootsnap',   '1.4.6', require: false
 
 group :development, :test do
-  gem 'sqlite3', '1.4.2'
   gem 'byebug',  '11.1.3', platforms: [:mri, :mingw, :x64_mingw]
 end
+
+gem 'sqlite3', group: :development
+ gem 'pg', '1.2.3', group: :production
 
 group :development do
   gem 'web-console',           '4.1.0'
@@ -35,10 +37,6 @@ group :test do
   gem 'minitest-reporters',       '1.3.8'
   gem 'guard',                    '2.16.2'
   gem 'guard-minitest',           '2.4.6'
-end
-
-group :production do
-  gem 'pg', '1.2.3'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
