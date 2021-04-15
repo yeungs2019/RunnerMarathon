@@ -28,8 +28,8 @@
       <%= f.password_field :password_confirmation, class: 'form-control' %>
       
       <% if current_user.admin? %>
-        <%= f.label :Admin, class: "checkbox inline" %>
-          <%= f.check_box :admin %>
+        <%= f.label :Admin, class: "cheekbox inline" %>
+          <%= f.check_box :admin, class: "box2" %>
         <% end %>
 
       <%= f.submit "Submit", class: "btn btn-primary" %>
