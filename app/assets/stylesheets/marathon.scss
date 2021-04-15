@@ -49,6 +49,7 @@ h1 {
   letter-spacing: -2px;
   margin-bottom: 30px;
   text-align: center;
+  opacity: .75;
 }
 
 h2 {
@@ -58,6 +59,7 @@ h2 {
   text-align: center;
   font-weight: normal;
   color: #00ccff;
+  opacity: .75;
 }
 
 p {
@@ -67,6 +69,7 @@ p {
   font-size: 20pt;
   font-color: #00ccff;
   font-weight: bold;
+  opacity: .75;
 }
 
 .p1{
@@ -195,7 +198,7 @@ input {
   background-position: center; /* Center the image */
   //background-repeat: no-repeat; /* Do not repeat the image */
   background-size: 125% 125%; /* Resize the background image to cover the entire container */
-  //opacity: 1;
+  opacity: .75;
   //text-opacity: 1;
   //background: rgba(76, 175, 80, 0.1);
 }
@@ -208,7 +211,14 @@ input {
   right: 0px;
   bottom: 0px;
   left: 0px;
-  opacity: 0;
+  opacity: .75;
+  //opacity: 0.5;
+}
+
+.runner-image p {
+  //background-image: url("logo.jpg");
+
+  opacity: 1;
   //opacity: 0.5;
 }
 
