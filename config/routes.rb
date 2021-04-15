@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   get  '/about',        to: 'marathon#about'
   get  '/schedule',     to: 'users#schedule'
   get  '/signup',       to: 'users#new'
+  get  '/map',          to: 'users#map'
   get  '/signin',       to: 'marathon#signin'
   get  '/userlist',     to: 'marathon#userlist'
   get  '/admin',        to: 'marathon#admin'
