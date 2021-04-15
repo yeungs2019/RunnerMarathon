@@ -34438,3 +34438,68 @@ Processing by UsersController#map as HTML
 Completed 200 OK in 475ms (Views: 472.2ms | ActiveRecord: 0.2ms | Allocations: 66639)
 
 
+Started GET "/" for 204.116.145.130 at 2021-04-15 23:49:23 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (4.3ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 2.2ms | Allocations: 396)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 544.0ms | Allocations: 121160)
+  Rendered layouts/_shim.html.erb (Duration: 0.8ms | Allocations: 92)
+  Rendered layouts/_header.html.erb (Duration: 1.6ms | Allocations: 586)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 559.2ms | Allocations: 123449)
+Completed 200 OK in 589ms (Views: 572.4ms | ActiveRecord: 0.0ms | Allocations: 127707)
+
+
+Started GET "/" for 204.116.145.130 at 2021-04-15 23:49:29 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 1.6ms | Allocations: 233)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 56.8ms | Allocations: 18902)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 92)
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 32.1ms | Allocations: 11243)
+  Rendered layouts/_footer.html.erb (Duration: 1.3ms | Allocations: 92)
+  Rendered layout layouts/application.html.erb (Duration: 97.5ms | Allocations: 31699)
+Completed 200 OK in 118ms (Views: 101.2ms | ActiveRecord: 1.4ms | Allocations: 34571)
+
+
+Started GET "/" for 204.116.145.130 at 2021-04-15 23:49:32 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 24.4ms | Allocations: 7403)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 13.5ms | Allocations: 2024)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 47.6ms | Allocations: 9763)
+Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.2ms | Allocations: 10286)
+
+
