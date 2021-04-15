@@ -29282,3 +29282,227 @@ Processing by MarathonController#about as HTML
 Completed 200 OK in 200ms (Views: 199.4ms | ActiveRecord: 0.2ms | Allocations: 64275)
 
 
+Started GET "/" for 204.116.145.130 at 2021-04-15 20:51:19 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 221)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 383.3ms | Allocations: 100392)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 94)
+  Rendered layouts/_header.html.erb (Duration: 1.0ms | Allocations: 510)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 173)
+  Rendered layout layouts/application.html.erb (Duration: 390.5ms | Allocations: 102515)
+Completed 200 OK in 404ms (Views: 393.5ms | ActiveRecord: 0.0ms | Allocations: 105257)
+
+
+Started GET "/" for 204.116.145.130 at 2021-04-15 20:51:27 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 14.8ms | Allocations: 7298)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 22.9ms | Allocations: 10198)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 41.7ms | Allocations: 17885)
+Completed 200 OK in 44ms (Views: 42.3ms | ActiveRecord: 0.9ms | Allocations: 18369)
+
+
+Started GET "/" for 204.116.145.130 at 2021-04-15 20:51:40 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.6ms | Allocations: 221)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 47.6ms | Allocations: 18524)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 92)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 24.4ms | Allocations: 10611)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 175)
+  Rendered layout layouts/application.html.erb (Duration: 78.9ms | Allocations: 30761)
+Completed 200 OK in 97ms (Views: 83.6ms | ActiveRecord: 0.9ms | Allocations: 33630)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-04-15 20:51:42 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 112)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 7.9ms | Allocations: 7464)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 7.1ms | Allocations: 1984)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 43)
+  Rendered layout layouts/application.html.erb (Duration: 19.1ms | Allocations: 9930)
+Completed 200 OK in 21ms (Views: 20.3ms | ActiveRecord: 0.2ms | Allocations: 10577)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-04-15 20:52:47 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.8ms | Allocations: 7489)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 7.6ms | Allocations: 2347)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 11265)
+Completed 200 OK in 26ms (Views: 24.6ms | ActiveRecord: 0.2ms | Allocations: 12461)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-04-15 20:53:55 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.8ms | Allocations: 7489)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 7.6ms | Allocations: 2347)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 11264)
+Completed 200 OK in 25ms (Views: 24.1ms | ActiveRecord: 0.2ms | Allocations: 12454)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-04-15 20:54:13 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.8ms | Allocations: 7488)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 7.5ms | Allocations: 2333)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 11248)
+Completed 200 OK in 26ms (Views: 24.3ms | ActiveRecord: 0.2ms | Allocations: 12438)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-04-15 20:54:16 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.2ms | Allocations: 7336)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 7.2ms | Allocations: 1959)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 41)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 9667)
+Completed 200 OK in 23ms (Views: 22.0ms | ActiveRecord: 0.2ms | Allocations: 10113)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-04-15 20:55:59 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 256.5ms | Allocations: 77031)
+  Rendered layouts/_shim.html.erb (Duration: 0.3ms | Allocations: 89)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 9.5ms | Allocations: 2333)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 272.2ms | Allocations: 80799)
+Completed 200 OK in 276ms (Views: 274.5ms | ActiveRecord: 0.2ms | Allocations: 81988)
+
+
+Started GET "/help" for 204.116.145.130 at 2021-04-15 20:56:33 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#help as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/help.html.erb within layouts/application
+  Rendered marathon/help.html.erb within layouts/application (Duration: 0.3ms | Allocations: 96)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_rails_default.html.erb (Duration: 8.3ms | Allocations: 7407)
+  Rendered layouts/_shim.html.erb (Duration: 0.2ms | Allocations: 84)
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/helpers/sessions_helper.rb:18:in `current_user'
+  Rendered layouts/_header.html.erb (Duration: 9.5ms | Allocations: 2333)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 166)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 11168)
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.2ms | Allocations: 12365)
+
+
