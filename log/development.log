@@ -34503,3 +34503,67 @@ Processing by MarathonController#home as HTML
 Completed 200 OK in 51ms (Views: 49.0ms | ActiveRecord: 0.2ms | Allocations: 10286)
 
 
+Started GET "/" for 204.116.145.130 at 2021-04-16 01:05:47 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[35m (4.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 3.0ms | Allocations: 396)
+[Webpacker] Compiling...
+Started GET "/" for 204.116.145.130 at 2021-04-16 01:05:56 +0000
+Cannot render console from 204.116.145.130! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by MarathonController#home as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering marathon/home.html.erb within layouts/application
+  Rendered marathon/home.html.erb within layouts/application (Duration: 0.0ms | Allocations: 4)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/ubuntu/environment/RunnerMarathon/public/packs
+[Webpacker] Hash: cde9954d2ae17707e4d0
+Version: webpack 4.46.0
+Time: 12442ms
+Built at: 04/16/2021 1:06:02 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-847235ef2af0f9c28df8.js    926 KiB  application  [emitted] [immutable]  application
+js/application-847235ef2af0f9c28df8.js.map    987 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-847235ef2af0f9c28df8.js js/application-847235ef2af0f9c28df8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 548 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 124 hidden modules
+
+  Rendered layouts/_rails_default.html.erb (Duration: 15653.6ms | Allocations: 89235)
+  Rendered layouts/_shim.html.erb (Duration: 0.8ms | Allocations: 92)
+  Rendered layouts/_header.html.erb (Duration: 3.1ms | Allocations: 586)
+  Rendered layouts/_footer.html.erb (Duration: 1.8ms | Allocations: 90)
+  Rendered layout layouts/application.html.erb (Duration: 15671.1ms | Allocations: 91524)
+Completed 200 OK in 15713ms (Views: 15681.3ms | ActiveRecord: 0.0ms | Allocations: 98461)
+
+
+[Webpacker] Compiled all packs in /home/ubuntu/environment/RunnerMarathon/public/packs
+[Webpacker] Hash: cde9954d2ae17707e4d0
+Version: webpack 4.46.0
+Time: 3981ms
+Built at: 04/16/2021 1:06:03 AM
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-847235ef2af0f9c28df8.js    926 KiB  application  [emitted] [immutable]  application
+js/application-847235ef2af0f9c28df8.js.map    987 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-847235ef2af0f9c28df8.js js/application-847235ef2af0f9c28df8.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 548 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 124 hidden modules
+
+  Rendered layouts/_rails_default.html.erb (Duration: 7116.5ms | Allocations: 10749)
+  Rendered layouts/_shim.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layouts/_header.html.erb (Duration: 0.3ms | Allocations: 136)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 5)
+  Rendered layout layouts/application.html.erb (Duration: 7123.2ms | Allocations: 11221)
+Completed 200 OK in 7131ms (Views: 7128.7ms | ActiveRecord: 0.0ms | Allocations: 14248)
+
+
